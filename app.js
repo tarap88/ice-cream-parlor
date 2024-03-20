@@ -93,3 +93,12 @@ function drawCart() {
     let totalElm = document.getElementById('total');
     totalElm.innerHTML = `<i class="mdi mdi-currency-usd"></i>${cartTotal.toFixed(2)}`;
 }
+
+function checkout() {
+
+    iceCream.forEach((item) => {
+        item.quantity = 0
+    })
+
+    drawCart()
+}
